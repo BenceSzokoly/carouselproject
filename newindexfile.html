@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Project</title>
+    <link rel="stylesheet" href="newstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="top-header">
+        <a class="fa-solid fa-basket-shopping"></a>
+    </div>
+        <header>
+            <h1>BabkaMama</h1>
+            <nav class="stroke">
+                <ul>
+                    <li><a class="header-link" href="#recipes">Recipes</a></li>
+                    <li><a class="header-link" href="#about">About Me</a></li>
+                    <li><a class="header-link" href="#workshops">Workshops</a></li>
+                    <li><a class="header-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>  
+    <main>
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel-item carousel-item-visible">
+                    <img class="carousel-img" src="./pompon.jpg" alt="desk lamp with pompons">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./volcano.jpg" alt="desk lamp volcano style">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./candy.jpg" alt="desk lamp with candy-style decoration">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./candy mug.jpg" alt="desk lamp with candy-style decoration">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./candy planter.jpg" alt="desk lamp with candy-style decoration">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./pompon lamp.jpg" alt="desk lamp with candy-style decoration">
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="./michelin mug.jpg" alt="desk lamp with candy-style decoration">
+                </div>
+                <div class="carousel-action">
+                    <button id="prev-slide"><</button>
+                    <button id="next-slide">></button>
+                </div>
+                <div class="dot-container">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+            </div>
+            <div class="recipe-title" id="recipes">
+                <h2>My Favourite Recipes</h2>
+            </div>
+            <div class="recipe-content disable-scrollbar">
+                <div class="recipes">
+                    <a class="recipe-link" href="#">
+                        <div class="recipe-img-container">
+                            <img class="recipe-card-img" src="./michelin mug.jpg" alt="">
+                            <h3>Csokis Babka</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="recipes">
+                    <a class="recipe-link" href="#">
+                        <div class="recipe-img-container">
+                            <img class="recipe-card-img" src="./michelin mug.jpg" alt="">
+                            <h3>Csokis Babka</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="recipes">
+                    <a class="recipe-link" href="#">
+                        <div class="recipe-img-container">
+                            <img class="recipe-card-img" src="./michelin mug.jpg" alt="">
+                            <h3>Csokis Babka</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="recipes">
+                    <a class="recipe-link" href="#">
+                        <div class="recipe-img-container">
+                            <img class="recipe-card-img" src="./michelin mug.jpg" alt="">
+                            <h3>Csokis Babka</h3>
+                        </div>
+                    </a>
+                </div>              
+                <div class="recipes">
+                    <a class="recipe-link" href="#">
+                        <div class="recipe-img-container">
+                            <img class="recipe-card-img" src="./michelin mug.jpg" alt="">
+                            <h3>Csokis Babka</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="recipes">
+                    <a class="recipe-link" href="#">
+                        <div class="recipe-img-container">
+                            <img class="recipe-card-img" src="./michelin mug.jpg" alt="">
+                            <h3>Csokis Babka</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                <div class="workshop-content" id="workshops">
+                    <div class="recipe-title" id="workshops">
+                        <h2>My Workshops</h2>
+                    </div>
+                </div>
+                <div class="about-me-content" id="about">
+                    <div class="recipe-title" id="about">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                
+                <div class="contact-content" id="contact">
+                    <h2>Contact Me</h2>
+                    <form action="action-php" id="cform">
+                        <label for="email">
+                            <input type="email" id="email" placeholder="email" required>
+                        </label>
+                        <label for="name">
+                            <input type="text" id="name" placeholder="name" required>
+                        </label>
+                        <label for="country">
+                            <input type="text" id="country" placeholder="country">
+                        </label>
+                        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                        <input type="submit" value="Submit" class="submit-btn">
+                    </form>    
+                </div>
+
+        </main>
+            <div class="scrolltotop-content">
+                <a class="scrolltop-btn" href="#top">&#x2191</a>
+            </div>
+        <footer>
+            <div class="footer-section">
+                <div class="footer-content footer-one">
+                    <ul >
+                        <li><a class="footer-link" href="#">Contact</a></li>
+                        <li><a class="footer-link" href="#">About</a></li>
+                        <li><a class="footer-link" href="#">Work with me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content footer-two">
+                    <div class="footer-middle-list-content">
+                        <ul>
+                            <li><a class="footer-link" href="#">Policy</a></li>
+                            <li><a class="footer-link" href="#">Returns</a></li>
+                            <li><a class="footer-link" href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content footer-three">
+                    <ul>
+                        <li><a href="#" class="fa fa-instagram footer-link"></a></li>
+                        <li><a href="#" class="fa fa-linkedin footer-link"></a></li>
+                        <li><a href="#" class="fa fa-facebook footer-link"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-main-title-content">
+                <h4>BabkaMama 2022</h4>
+                <p class="fineprint">All rights reserved</p>
+            </div>
+        </footer>
+
+    <script src="app.js"></script>
+</body>
